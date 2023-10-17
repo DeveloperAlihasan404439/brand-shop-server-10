@@ -23,6 +23,18 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
     // Send a ping to confirm a successful connection
+    const webtechCollection = client.db('Brand-Shop').collection('Brands')
+
+    app.get('/brands', async(req, res)=>{
+      const brands = webtechCollection.find()
+      const result = await brands.toArray()
+      res.send(result)
+    })
+    app.post('/brands', async(req, res)=>{
+      const brands = req.body;
+      const result = await webtechCollection.insertOne(brands)
+      res.send(result)
+    })
     await client.db("admin").command({ ping: 1 });
     console.log("You successfully connected to MongoDB!");
   } finally {
