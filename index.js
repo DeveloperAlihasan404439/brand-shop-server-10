@@ -43,8 +43,9 @@ async function run() {
       const brand = req.params.brand;
       const filter = {brand_name: brand}
       const data = addProductCollection.find(filter)
-      const result = await data.toArray(data)
+      const result = await data.toArray()
       res.send(result)
+      console.log(result);
     })
 
     app.post('/products', async(req, res)=>{
