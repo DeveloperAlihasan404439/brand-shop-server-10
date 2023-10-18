@@ -42,10 +42,23 @@ async function run() {
     app.get('/products/:brand', async(req, res)=>{
       const brand = req.params.brand;
       const filter = {brand_name: brand}
-      const data = addProductCollection.find(filter)
-      const result = await data.toArray()
+      const products = addProductCollection.find(filter)
+      const result = await products.toArray()
       res.send(result)
-      console.log(result);
+    })
+
+    app.get('/products', async(req, res)=>{
+      const productAll = addProductCollection.find()
+      const result = await productAll.toArray()
+      res.send(result)
+    })
+    app.get('/products/:id', async(req, res)=>{
+      const id = req.params.id;
+      console.log(id);
+      // const filter = {_id: new ObjectId(id)}
+      // const product = await addProductCollection.findOne(filter)
+      // console.log(product);
+      // res.send(product)
     })
 
     app.post('/products', async(req, res)=>{
