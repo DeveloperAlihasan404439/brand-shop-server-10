@@ -1,62 +1,218 @@
-
-https://i.ibb.co/vVPYDmc/banner.jpg
-
-
-
-
-https://i.ibb.co/w6m3Xg2/svmsung-1.jpg
-https://i.ibb.co/Jc0QzvR/svmsung-2.jpg
-https://i.ibb.co/34rjW13/svmsung-3.jpg
-https://i.ibb.co/r5YGs3b/svmsung-4.jpg
-
-https://i.ibb.co/M5QPXKP/nokia-1.jpg
-https://i.ibb.co/4m2qq0W/nokia-2.webp
-https://i.ibb.co/jL7Fjbg/nokia-3.webp
-https://i.ibb.co/Bz4Vwnf/nokia-4.webp
-
-https://i.ibb.co/MMZzk77/apply-1.jpg
-https://i.ibb.co/N1fZ5D5/appy-2.jpg
-https://i.ibb.co/Fw8Kf3f/apply-3.jpg
-https://i.ibb.co/g96SSs6/apply-4.jpg
-
-https://i.ibb.co/KVKMfHt/google-1.jpg
-https://i.ibb.co/qrhsKNv/google-2.jpg
-https://i.ibb.co/rvnQyBw/google-3.jpg
-https://i.ibb.co/VQ4M28m/google-4.jpg
-
-https://i.ibb.co/0KBhBM5/intel-1.jpg
-https://i.ibb.co/JQCpN66/intel-2.jpg
-https://i.ibb.co/ts3h3PG/intel-3.jpg
-https://i.ibb.co/FnQDGRv/intel-4-12.jpg
-
-https://i.ibb.co/zJwbfDF/sony-headphone.jpg
-https://i.ibb.co/rfqjQjb/sony-speaker.jpg
-https://i.ibb.co/7YX4CxW/sony-laptop.jpg
-https://i.ibb.co/LJk4cFB/sony-camera.jpg
-
 [
-    {
-      "brandName": "Nokia",
-      "brandURL": "https://i.ibb.co/gDp2sx4/nokia.webp"
-    },
-    {
-      "brandName": "Intel",
-      "brandURL": "https://i.ibb.co/FXqbzdS/intel.jpg"
-    },
-    {
-      "brandName": "Google",
-      "brandURL": "https://i.ibb.co/87JQHwG/google.jpg"
-    },
-    {
-      "brandName": "Svmsung",
-      "brandURL": "https://i.ibb.co/RSJ8nWS/svmsung.jpg"
-    },
-    {
-      "brandName": "Sony",
-      "brandURL": "https://i.ibb.co/3MC2FbN/sony.jpg"
-    },
-    {
-      "brandName": "Apply",
-      "brandURL": "https://i.ibb.co/BsrLPvD/apply.png"
-    }
-  ]
+  {
+    "name": "Tablet",
+    "image": "https://i.ibb.co/MMZzk77/apply-1.jpg",
+    "brand_name": "Apple",
+    "type": "Tablet",
+    "price": 999.99,
+    "rating": 4.8,
+    "description": "Experience the latest flagship innovation from Apple. This Tablet offers a stunning camera and exceptional performance, making it a must-have for tech enthusiasts."
+  },
+  {
+    "name": "Apple G2 Phone",
+    "image": "https://i.ibb.co/N1fZ5D5/appy-2.jpg",
+    "brand_name": "Apple",
+    "type": "Phone",
+    "price": 1199.99,
+    "rating": 4.7,
+    "description": "This ultra-thin laptop features the powerful M1 chip, ensuring seamless performance for work and entertainment."
+  },
+  {
+    "name": "Watch B3",
+    "image": "https://i.ibb.co/Fw8Kf3f/apply-3.jpg",
+    "brand_name": "Apple",
+    "type": "Watch",
+    "price": 249.99,
+    "rating": 4.5,
+    "description": "This advanced smartwatch offers ECG and blood oxygen monitoring, making it an essential health companion."
+  },
+  {
+    "name": "Watch Series",
+    "image": "https://i.ibb.co/g96SSs6/apply-4.jpg",
+    "brand_name": "Apple",
+    "type": "watch",
+    "price": 349.99,
+    "rating": 4.6,
+    "description": "Enjoy noise-cancelling wireless earbuds with spatial audio, providing an immersive audio experience."
+  },
+  {
+    "name": "Nokia Phone",
+    "image": "https://i.ibb.co/M5QPXKP/nokia-1.jpg",
+    "brand_name": "Nokia",
+    "type": "Smartphone",
+    "price": 349.99,
+    "rating": 4.2,
+    "description": "Get your hands on a solid mid-range smartphone with 5G connectivity, perfect for staying connected and productive."
+  },
+  {
+    "name": "Core I7",
+    "image": "https://i.ibb.co/4m2qq0W/nokia-2.webp",
+    "brand_name": "Nokia",
+    "type": "Core",
+    "price": 199.99,
+    "rating": 4.0,
+    "description": "A budget-friendly smartphone with a clean Android experience, offering great value for your money."
+  },
+  {
+    "name": "Nokia Power",
+    "image": "https://i.ibb.co/Bz4Vwnf/nokia-4.webp",
+    "brand_name": "Nokia",
+    "type": "phone",
+    "price": 69.99,
+    "rating": 3.8,
+    "description": "These true wireless earbuds come with a long-lasting battery, ensuring uninterrupted music and calls."
+  },
+  {
+    "name": "Nokia G7",
+    "image": "https://i.ibb.co/jL7Fjbg/nokia-3.webp",
+    "brand_name": "Nokia",
+    "type": "Smartphone",
+    "price": 149.99,
+    "rating": 3.9,
+    "description": "An affordable smartphone with a large display, perfect for multimedia and gaming."
+  },
+  {
+    "name": "Samsung Galaxy S21",
+    "image": "https://i.ibb.co/w6m3Xg2/svmsung-1.jpg",
+    "brand_name": "Samsung",
+    "type": "Smartphone",
+    "price": 799.99,
+    "rating": 4.6,
+    "description": "Experience a flagship smartphone with a stunning AMOLED display, ideal for both work and play."
+  },
+  {
+    "name": "Watch MV",
+    "image": "https://i.ibb.co/r5YGs3b/svmsung-4.jpg",
+    "brand_name": "Samsung",
+    "type": "Watch",
+    "price": 1099.99,
+    "rating": 4.5,
+    "description": "This thin and light laptop features an AMOLED screen and powerful performance, perfect for on-the-go productivity."
+  },
+  {
+    "name": "Samsung Tv",
+    "image": "https://i.ibb.co/Jc0QzvR/svmsung-2.jpg",
+    "brand_name": "Samsung",
+    "type": "TV",
+    "price": 199.99,
+    "rating": 4.4,
+    "description": "Wireless earbuds with intelligent active noise cancellation, enhancing your audio experience."
+  },
+  {
+    "name": "Samsung Z34",
+    "image": "https://i.ibb.co/34rjW13/svmsung-3.jpg",
+    "brand_name": "Samsung",
+    "type": "Phone",
+    "price": 999.99,
+    "rating": 4.7,
+    "description": "Ultra HD QLED TV with vibrant colors and smart features, providing a top-tier viewing experience."
+  },
+  {
+    "name": "Leptop",
+    "image": "https://i.ibb.co/FnQDGRv/intel-4-12.jpg",
+    "brand_name": "Intel",
+    "type": "Leptop",
+    "price": 499.99,
+    "rating": 4.8,
+    "description": "A high-performance processor for gaming and content creation, delivering exceptional power and speed."
+  },
+  {
+    "name": "Destop",
+    "image": "https://i.ibb.co/ts3h3PG/intel-3.jpg",
+    "brand_name": "Intel",
+    "type": "Dextop",
+    "price": 699.99,
+    "rating": 4.5,
+    "description": "This compact and powerful mini PC is designed for business and entertainment, offering versatility and performance."
+  },
+  {
+    "name": "Core I5",
+    "image": "https://i.ibb.co/JQCpN66/intel-2.jpg",
+    "brand_name": "Intel",
+    "type": "Core",
+    "price": 119.99,
+    "rating": 4.6,
+    "description": "A fast and reliable SSD that improves system performance, making your computer more responsive and efficient."
+  },
+  {
+    "name": "Motherboart",
+    "image": "https://i.ibb.co/0KBhBM5/intel-1.jpg",
+    "brand_name": "Intel",
+    "type": "Motherboart",
+    "price": 39.99,
+    "rating": 4.4,
+    "description": "A wireless networking card for high-speed Wi-Fi 6 connectivity, ensuring seamless online experiences."
+  },
+  {
+    "name": "Camera",
+    "image": "https://i.ibb.co/LJk4cFB/sony-camera.jpg",
+    "brand_name": "Sony",
+    "type": "Camera",
+    "price": 1999.99,
+    "rating": 4.9,
+    "description": "A full-frame mirrorless camera with exceptional image quality, perfect for photography enthusiasts and professionals."
+  },
+  {
+    "name": "Headphone",
+    "image": "https://i.ibb.co/zJwbfDF/sony-headphone.jpg",
+    "brand_name": "Sony",
+    "type": "Headphones",
+    "price": 349.99,
+    "rating": 4.8,
+    "description": "Premium noise-cancelling headphones with high-res audio, providing an immersive and high-quality listening experience."
+  },
+  {
+    "name": "Speaker",
+    "image": "https://i.ibb.co/rfqjQjb/sony-speaker.jpg",
+    "brand_name": "Sony",
+    "type": "Speaker",
+    "price": 1499.99,
+    "rating": 4.7,
+    "description": "An OLED TV with stunning picture quality and smart features, offering an exceptional home entertainment experience."
+  },
+  {
+    "name": "Laptop",
+    "image": "https://i.ibb.co/7YX4CxW/sony-laptop.jpg",
+    "brand_name": "Sony",
+    "type": "Leptop",
+    "price": 499.99,
+    "rating": 4.9,
+    "description": "The next-gen gaming console with 4K graphics and fast load times, ensuring an outstanding gaming experience."
+  },
+  {
+    "name": "Pixel Phone",
+    "image": "https://i.ibb.co/KVKMfHt/google-1.jpg",
+    "brand_name": "Google",
+    "type": "Smartphone",
+    "price": 699.99,
+    "rating": 4.5,
+    "description": "A pixel-perfect camera and a pure Android experience, making it a top choice for photography and Android enthusiasts."
+  },
+  {
+    "name": "Google Nest Hub",
+    "image": "https://i.ibb.co/qrhsKNv/google-2.jpg",
+    "brand_name": "Google",
+    "type": "Phone",
+    "price": 99.99,
+    "rating": 4.4,
+    "description": "A smart display with Google Assistant for your home, offering convenience and control over your smart devices."
+  },
+  {
+    "name": "Google Watch",
+    "image": "https://i.ibb.co/rvnQyBw/google-3.jpg",
+    "brand_name": "Google",
+    "type": "Watch",
+    "price": 799.99,
+    "rating": 4.6,
+    "description": "A lightweight Chromebook for productivity on the go, featuring a sleek design and efficient performance."
+  },
+  {
+    "name": "Google Motherboart",
+    "image": "https://i.ibb.co/VQ4M28m/google-4.jpg",
+    "brand_name": "Google",
+    "type": "Motherboart",
+    "price": 69.99,
+    "rating": 4.3,
+    "description": "Stream 4K content to your TV with this compact device, ensuring a seamless streaming experience."
+  }
+]
