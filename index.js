@@ -25,6 +25,7 @@ async function run() {
     // Send a ping to confirm a successful connection
     const webtechCollection = client.db('Brand-Shop').collection('Brands')
     const addProductCollection = client.db('Brand-Shop').collection('product')
+    const myCratCollection = client.db('Brand-Shop').collection('my_crat')
 
     app.get('/brands', async(req, res)=>{
       const brands = webtechCollection.find()
@@ -52,22 +53,22 @@ async function run() {
       const result = await productAll.toArray()
       res.send(result)
     })
-    app.get('/products/:id', async(req, res)=>{
-      const id = req.params.id;
-      console.log(id);
-      // const filter = {_id: new ObjectId(id)}
-      // const product = await addProductCollection.findOne(filter)
-      // console.log(product);
-      // res.send(product)
-    })
-
     app.post('/products', async(req, res)=>{
       const products = req.body;
-      console.log(products);
       const result = await addProductCollection.insertOne(products)
       res.send(result)
     })
-
+    app.get('/myCrat', async(req, res)=>{
+      const myProducts = myCratCollection.find()
+      const result = await myProducts.toArray()
+      res.send(result)
+    })
+    // My Crat Collection 
+    app.post('/myCrat', async(req, res)=>{
+      const myCrat = req.body;
+      const result = await myCratCollection.insertOne(myCrat)
+      res.send(result)
+    })
     await client.db("admin").command({ ping: 1 });
     console.log("You successfully connected to MongoDB!");
   } finally {
