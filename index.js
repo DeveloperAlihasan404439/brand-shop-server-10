@@ -1,6 +1,6 @@
 const express = require('express')
 const cors = require('cors')
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const app = express()
 const port = process.env.PORT || 5000;
 require('dotenv').config()
@@ -36,13 +36,17 @@ async function run() {
       const result = await webtechCollection.insertOne(brands)
       res.send(result)
     })
-    
+
     // addProductCollection start 
-    app.get('/products', async(req, res)=>{
-      const products = addProductCollection.find();
-      const result = await products.toArray()
+
+    app.get('/products/:brand', async(req, res)=>{
+      const brand = req.params.brand;
+      const filter = {brand_name: brand}
+      const data = addProductCollection.find(filter)
+      const result = await data.toArray(data)
       res.send(result)
     })
+
     app.post('/products', async(req, res)=>{
       const products = req.body;
       console.log(products);
