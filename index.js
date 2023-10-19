@@ -53,6 +53,25 @@ async function run() {
       const result = await productAll.toArray()
       res.send(result)
     })
+    app.put('/products/:id', async(req, res) =>{
+      const id = req.params.id;
+      const query = {_id: new ObjectId(id)}
+      const product = req.body;
+     const updatedProduct = {
+        $set:{
+          name: product.name,
+          image: product.image,
+          brand_name: product.brand_name,
+          type: product.type,
+          price: product.price,
+          rating: product.rating,
+          description: product.description,
+        }
+      }
+      const resutl = await addProductCollection.updateOne(query, updatedProduct)
+      console.log(resutl);
+      res.send(resutl)
+    })
     app.post('/products', async(req, res)=>{
       const products = req.body;
       const result = await addProductCollection.insertOne(products)
@@ -64,6 +83,14 @@ async function run() {
       res.send(result)
     })
     // My Crat Collection 
+    app.delete('/myCrat/:id', async(req, res)=>{
+      const id = req.params.id;
+      console.log(id);
+      const query = {_id: id}
+      const result = await myCratCollection.deleteOne(query)
+      console.log(result);
+      res.send(result)
+    })
     app.post('/myCrat', async(req, res)=>{
       const myCrat = req.body;
       const result = await myCratCollection.insertOne(myCrat)
